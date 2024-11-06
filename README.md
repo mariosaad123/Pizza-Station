@@ -22,7 +22,7 @@
 1. **تحميل المشروع**:
    - قم بتحميل أو استنساخ (Clone) المشروع باستخدام الرابط:
      ```bash
-     git clone https://github.com/mariosaad/pizza-station.git
+     git clone https://github.com/mariosaad123/Pizza-Station.git
      ```
 
 2. **انتقل إلى مجلد المشروع**:
