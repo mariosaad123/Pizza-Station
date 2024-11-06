@@ -1,0 +1,7 @@
+@mixin pizza-theme($bg-color, $text-color) {
+  background-color: $bg-color !important;
+  color: $text-color !important;
+  &:hover {
+    background-color: darken($bg-color, 10%) !important;
+  }
+}

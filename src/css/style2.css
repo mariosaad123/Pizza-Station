@@ -1,0 +1,165 @@
+main {
+  background-color: #f7f7f7;
+  padding: 2rem;
+}
+main .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+#pizzaCarousel .carousel-item img {
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+#pizzaCarousel .carousel-item .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  padding: 1rem;
+}
+#pizzaCarousel .carousel-item .carousel-caption h5 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+#pizzaCarousel .carousel-control-prev-icon,
+#pizzaCarousel .carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.product-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.product-details img {
+  border-radius: 8px;
+  width: 100%;
+}
+.product-details .product-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.product-details .price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ff6347;
+}
+
+.reviews h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+.reviews .review {
+  margin-bottom: 1rem;
+}
+.reviews .review .review-text {
+  font-style: italic;
+}
+.reviews .review .rating {
+  color: gold;
+}
+
+.similar-meals {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.similar-meals .meal-card {
+  width: calc(33% - 1rem);
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+}
+.similar-meals .meal-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.similar-meals .meal-card h4 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.add-to-cart {
+  background-color: #C72C41 !important;
+  color: white !important;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+}
+.add-to-cart:hover {
+  background-color: rgb(157.2345679012, 34.7654320988, 51.3580246914) !important;
+}
+
+.add-to-cart-2 {
+  background-color: #4CAF50 !important;
+  color: white !important;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+}
+.add-to-cart-2:hover {
+  background-color: rgb(60.5577689243, 139.4422310757, 63.7450199203) !important;
+}
+
+.add-to-cart-3 {
+  background-color: #FFD700 !important;
+  color: white !important;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+}
+.add-to-cart-3:hover {
+  background-color: #ccac00 !important;
+}
+
+.reviews {
+  background-color: #C72C41 !important;
+  color: white !important;
+  padding: 2rem;
+  border-radius: 8px;
+  color: #fff;
+}
+.reviews:hover {
+  background-color: rgb(157.2345679012, 34.7654320988, 51.3580246914) !important;
+}
+
+.reviews2 {
+  background-color: #4CAF50 !important;
+  color: white !important;
+  padding: 2rem;
+  border-radius: 8px;
+  color: #fff;
+}
+.reviews2:hover {
+  background-color: rgb(60.5577689243, 139.4422310757, 63.7450199203) !important;
+}
+
+.reviews3 {
+  background-color: #FFD700 !important;
+  color: white !important;
+  padding: 2rem;
+  border-radius: 8px;
+  color: #fff;
+}
+.reviews3:hover {
+  background-color: #ccac00 !important;
+}
+
+@media (max-width: 768px) {
+  .product-details, .similar-meals {
+    flex-direction: column;
+  }
+  .product-details .meal-card, .similar-meals .meal-card {
+    width: 100%;
+  }
+  .carousel-caption {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style2.css.map */

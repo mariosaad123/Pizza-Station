@@ -1,0 +1,159 @@
+@import './mixin';
+@import './variables';
+
+
+
+main {
+  background-color: $background-color;
+  padding: $padding;
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+
+
+#pizzaCarousel {
+  .carousel-item {
+    img {
+      border-radius: $border-radius;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: $border-radius;
+      padding: 1rem;
+      h5 {
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+    }
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(1);
+  }
+}
+
+
+.product-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  img {
+    border-radius: $border-radius;
+    width: 100%;
+  }
+  .product-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  .price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: $primary-color;
+  }
+
+}
+
+
+.reviews {
+  h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+  .review {
+    margin-bottom: 1rem;
+    .review-text {
+      font-style: italic;
+    }
+    .rating {
+      color: gold;
+    }
+  }
+}
+
+
+.similar-meals {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  .meal-card {
+    width: calc(33% - 1rem);
+    background-color: #fff;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    padding: 1rem;
+    text-align: center;
+    img {
+      width: 100%;
+      border-radius: $border-radius;
+      margin-bottom: 1rem;
+    }
+    h4 {
+      font-size: 1.5rem;
+      color: $secondary-color;
+    }
+  }
+}
+
+// جميع ازرار الاضافة لسلة الشراء
+.add-to-cart {
+  @include pizza-theme($reviews-color, $white-color);
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.add-to-cart-2 {
+  @include pizza-theme($reviews-color2, $white-color);
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+}
+.add-to-cart-3 {
+  @include pizza-theme($reviews-color3, $white-color);
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+}
+
+
+
+// جميع خلفيات قسم التقييمات
+.reviews {
+  @include pizza-theme($reviews-color, $white-color);
+  padding: $padding;
+  border-radius: $border-radius;
+  color: #fff;
+}
+.reviews2 {
+  @include pizza-theme($reviews-color2, $white-color);
+  padding: $padding;
+  border-radius: $border-radius;
+  color: #fff;
+}
+.reviews3 {
+  @include pizza-theme($reviews-color3, $white-color);
+  padding: $padding;
+  border-radius: $border-radius;
+  color: #fff;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .product-details, .similar-meals {
+    flex-direction: column;
+    .meal-card {
+      width: 100%;
+    }
+  }
+  .carousel-caption {
+    font-size: 1rem;
+  }
+}
